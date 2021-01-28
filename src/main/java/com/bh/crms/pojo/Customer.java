@@ -23,6 +23,14 @@ public class Customer {
                 this.email = email;
                 this.description = description;
     }
+    public  Customer( String cname, String gender, String cellphone, String email){
+
+        this.cname = cname;
+        this.gender = gender;
+        this.cellphone = cellphone;
+        this.email = email;
+
+    }
 
     public String getCid() {
         return cid;

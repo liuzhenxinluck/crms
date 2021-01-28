@@ -25,6 +25,5 @@ public class CustomerFillall extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("list.jsp");
             dispatcher.forward(req,resp);
 
-
     }
 }

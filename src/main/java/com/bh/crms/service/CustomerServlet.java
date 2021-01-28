@@ -37,9 +37,7 @@ public class CustomerServlet extends HttpServlet {
         String  gender = req.getParameter("gender");
         String birthday = req.getParameter("birthday");
         Date newbirthday = null;
-
-            newbirthday = DateUtils.format3(birthday,"yy-MM-dd");
-
+        newbirthday = DateUtils.format3(birthday,"yy-MM-dd");
         String cellphone = req.getParameter("cellphone");
         String email = req.getParameter("email");
         String description = req.getParameter("description");
