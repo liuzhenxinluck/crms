@@ -13,6 +13,12 @@ import java.util.List;
 
 @WebServlet(name = "ListServlet",urlPatterns = "/list")
 public class ListServlet extends HttpServlet {
+    /**
+     * 1.接受前端的传输数据
+     * 2.把数据进行封装
+     * 3.接受后端的书局保存到request域中
+     * 4.跳转页面
+     */
     private  CustomerService customerService = new CustomerService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

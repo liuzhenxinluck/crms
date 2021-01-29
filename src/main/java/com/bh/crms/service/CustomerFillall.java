@@ -19,6 +19,13 @@ public class CustomerFillall extends HttpServlet {
             private  CustomerService customerService = new CustomerService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        /**
+         * 1.接受前端的传输数据
+         * 2.把数据进行封装
+         * 3.接受后端的书局保存到request域中
+         * 4.跳转页面
+         */
         //super.doGet(req, resp);
             List<Customer> list = customerService.fillall();
             req.setAttribute("custom",list);

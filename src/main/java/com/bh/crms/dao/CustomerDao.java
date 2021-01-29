@@ -108,12 +108,12 @@ public class CustomerDao {
               objectList.add("%"+c.getGender().trim()+"%");
           }
 
-        if (!c.getCellphone().equals("")){
+          if (!c.getCellphone().equals("")){
             sql += " and cellphone like ?";
             objectList.add("%"+c.getCellphone()+"%");
-        }
+          }
 
-        if (!c.getEmail().equals("")){
+          if (!c.getEmail().equals("")){
             sql += " and email like ?";
             objectList.add("%"+c.getEmail()+"%");
         }
@@ -127,8 +127,4 @@ public class CustomerDao {
         return list;
 
     }
-
-
-
-
 }

@@ -19,7 +19,10 @@ public class EditsServlet extends HttpServlet {
     private CustomerService service =new CustomerService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 /**
- *
+ * 1.接受前端的传输数据
+ * 2.把数据进行封装
+ * 3.接受后端的书局保存到request域中
+ * 4.跳转页面
  */
         try {
             String cid = request.getParameter("cid");

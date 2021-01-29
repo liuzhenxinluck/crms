@@ -28,9 +28,12 @@ public class CustomerServlet extends HttpServlet {
 
         //super.doPost(req, resp);
         try {
-        /**
-         *
-         */
+            /**
+             * 1.接受前端的传输数据
+             * 2.把数据进行封装
+             * 3.接受后端的书局保存到request域中
+             * 4.跳转页面
+             */
         Customer customer= new Customer();
         String cid = Uuidutils.UUid();
         String name = req.getParameter("cname");

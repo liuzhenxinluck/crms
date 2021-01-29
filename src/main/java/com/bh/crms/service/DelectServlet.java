@@ -19,6 +19,12 @@ public class DelectServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        /**
+         * 1.接受前端的传输数据
+         * 2.把数据进行封装
+         * 3.接受后端的书局保存到request域中
+         * 4.跳转页面
+         */
         String cid = request.getParameter("cid");
         customerService.deletecustomer(cid);
         RequestDispatcher dispatcher = request.getRequestDispatcher("msg.jsp");
